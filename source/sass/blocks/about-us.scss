@@ -1,0 +1,62 @@
+.about-us__list {
+  @include reset-list;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding: 0 80px;
+}
+
+.about-us__item {
+  font-size: 16px;
+  line-height: 20px;
+  color: #242424;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+
+  padding-top: 110px;
+  margin-bottom: 18px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 108px;
+    height: 80px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/recipes@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--article {
+    &::after {
+      width: 107px;
+      background-image: url("../img/cooking-articles@1x.png");
+    }
+  }
+
+  &--book {
+    &::after {
+      width: 101px;
+      background-image: url("../img/recipes-book@1x.png");
+    }
+  }
+
+  &--box {
+    &::after {
+      width: 97px;
+      background-image: url("../img/recipes-box@1x.png");
+    }
+  }
+
+  &--print {
+    &::after {
+      width: 94px;
+      background-image: url("../img/recipes-print@1x.png");
+    }
+  }
+}

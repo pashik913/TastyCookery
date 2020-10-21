@@ -1,0 +1,62 @@
+.header {
+  background-image: url("../img/main-bg-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #e47481;
+
+  margin-bottom: 50px;
+}
+
+.header__logo {
+  margin-top: 28px;
+  margin-bottom: 20px;
+}
+
+.header__wrapper {
+  padding: 0 20px;
+}
+
+.header__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header__text {
+  font-size: 20px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 250px;
+}
+
+.header__link {
+  display: block;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 21px 60px;
+  border-radius: 10px;
+
+  margin: 0 auto;
+
+  background: linear-gradient(45deg, #1cbe7d, #b6dd31);
+  box-shadow: 10px 10px 30px 10px rgba(33, 33, 33, 0.4);
+}
+
+.header__button-wrapper {
+  padding-bottom: 50px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Домашние простые рецпты</title>
+    <link rel="preload" href="fonts/Circe-ExtraBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Circe-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Circe-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js" async=""></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper container">
+        <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="186" height="49" viewBox="0 0 186 49">
+          <image id="Cook_for_real" data-name="Cook for real" width="186" height="49" xlink:href="data:img/png;base64,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"/>
+        </svg>
+        <h1 class="header__title">Домашние простые рецепты</h1>
+        <p class="header__text">Собирайте рецепты в recipe box</p>
+        <div class="header__button-wrapper">
+          <a href="#form" class="header__link">Присоединиться к сообществу</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="about-us slider container">
+        <h2 class="visually-hidden">Что вы найдёте у нас?</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-4" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-5" name="toggle">
+        <div class="slider__controls">
+          <label class="slider__controls-item slider__controls-item--1" for="product-1">Первый</label>
+          <label class="slider__controls-item slider__controls-item--2" for="product-2">Второй</label>
+          <label class="slider__controls-item slider__controls-item--3" for="product-3">Третий</label>
+          <label class="slider__controls-item slider__controls-item--4" for="product-4">Четвёртый</label>
+          <label class="slider__controls-item slider__controls-item--5" for="product-5">Пятый</label>
+        </div>
+        <ul class="about-us__list slider__list">
+          <li class="about-us__item slider__item">Простые домашние рецепты</li>
+          <li class="about-us__item about-us__item--article slider__item">Статьи о готовке</li>
+          <li class="about-us__item about-us__item--book slider__item">Бесплатная книга рецептов</li>
+          <li class="about-us__item about-us__item--box slider__item">Собирайте рецепты в recipe box</li>
+          <li class="about-us__item about-us__item--print slider__item">Печать рецептов</li>
+        </ul>
+      </section>
+      <section class="advantages container">
+        <h2 class="advantages__title">Почему круто быть с нами:</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img class="advantages__img" src="img/img-best-recipes@1x.png" width="338" height="341" alt="Лучшие рецепты даже в телефоне">
+            <p class="advantages__text">Получать лучшие рецепты по разным категориям</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__img" src="img/img-cooking@1x.png" width="403" height="338" alt="Вкуснейшее блюдо">
+            <p class="advantages__text">Готовить без лишних усилий и делать из каждого дня не рутинный</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__img" src="img/img-happy-family@1x.png" width="337" height="363" alt="Счастливый ребёнок">
+            <p class="advantages__text">Довольные члены семьи</p>
+          </li>
+        </ul>
+      </section>
+      <section class="info">
+        <div class="info__wrapper container">
+          <h2 class="visually-hidden">Уникальные рецепты прямо на Вашу почту</h2>
+          <p class="info__text">Удобно получать на емейл уникальные проверенные рецепты, которые дружная команда Tastycookery попробовала сама и рекомендует</p>
+          <a href="#form" class="info__link">Стать членом семьи Tastycookery <span class="info__link-text">БЕСПЛАТНО</span></a>
+        </div>
+      </section>
+      <section class="reviews container">
+        <h2 class="reviews__title">Отзывы довольных пользователей</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <div class="reviews__border-wrapper">
+              <blockquote class="reviews__text">После того, как стала участником проекта Tastycookery получает много простых рецептов, о которых раньше не задумывась, стала готовить некоторые, семья рада, стали больше разговаривать во время ужина и хвалить кулинарные таланты Человека1.</blockquote>
+            </div>
+            <div class="reviews__wrapper">
+              <img class="reviews__img" src="img/avatar-daenerys@1x.png" width="81" height="81" alt="Аватар Тайвина">
+              <div class="reviews__column">
+                <cite class="reviews__author">Дайнерис</cite>
+                <span class="reviews__age">56 лет</span>
+              </div>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__border-wrapper">
+              <blockquote class="reviews__text">Рад, что благодаря простым рецептам может наслаждаться изысканными блюдами, тратя на приготовление 20 мин в день</blockquote>
+            </div>
+            <div class="reviews__wrapper">
+              <img class="reviews__img" src="img/avatar-tywin@1x.png" width="85" height="84" alt="Аватар Тайвина">
+              <div class="reviews__column">
+                <cite class="reviews__author">Тайвин</cite>
+                <span class="reviews__age">43 лет</span>
+              </div>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__border-wrapper">
+              <blockquote class="reviews__text">Довольна, что благодаря рецептам с TC может на работу брать полезные обеды, что полностью отказалась от офисной неполезной еды и за 2 месяца похудела на 3 кг. И очень рекомендует всем использовать рецепты с сайта</blockquote>
+            </div>
+            <div class="reviews__wrapper">
+              <img class="reviews__img" src="img/avatar-cersei@1x.png" width="83" height="82" alt="Аватар Серсеи">
+              <div class="reviews__column">
+                <cite class="reviews__author">Серсея</cite>
+                <span class="reviews__age">56 лет</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <h2 class="visually-hidden">Подпишитесь на нас</h2>
+        <div class="footer__first-wrapper">
+          <p class="footer__text">
+            Sign up to receive daily manually selected
+            recipes, delicious weekly articles,
+            3-piece sets of slow cooker, vegetarian, and lunch ideas, plus Quick&Easy recipes and
+            Nutrition Value flashcards via email.
+          </p>
+        </div>
+        <div class="footer__second-wrapper">
+          <form class="footer__form" action="#" id="form" method="POST">
+            <label for="email">
+              <input type="email" name="email" id="email" placeholder="Enter your email">
+            </label>
+            <button class="footer__button button" type="submit">Sign up</button>
+          </form>
+          <span class="footer__privacy-text">By signing up I agree to the terms of the
+            <a class="footer__link" href="#">Privacy Policy</a>
+          </span>
+        </div>
+      </div>
+      <p class="footer__copyright">© 2014–2018 TastyCookery.com</p>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+.info {
+  background-image: url("../img/body-bg-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin-bottom: 50px;
+}
+
+.info__wrapper {
+  padding: 0 20px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.info__text {
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.info__link {
+  display: block;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 21px 16px;
+  border-radius: 10px;
+  margin: 0 auto;
+  background: linear-gradient(45deg,#1cbe7d,#b6dd31);
+  box-shadow: 10px 10px 30px 10px rgba(33,33,33,.4);
+  text-align: center;
+  color: #ffffff;
+}
+
+.info__link-text {
+  font-weight: 700;
+  text-transform: uppercase;
+}
